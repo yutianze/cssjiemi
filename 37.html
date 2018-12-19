@@ -1,0 +1,46 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>精确控制表格列宽</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style type="text/css">
+        table{
+            table-layout: fixed;
+            width: 50%;
+        }
+        /* 为使表格宽度有效，设置属性table-layout,其行为模式被称作自动表格布局算法，默认值为auto
+        用法：对<table>元素或其他具有display:table样式的元素应用该属性即可
+        为保证有效，需对表格元素设置宽度；同样为使text-overflow: ellipsis;有效，需为那一列指定宽度 */
+        td{
+            width:1vw;
+            height:1vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>sgcdgcjhdsgchjdsgjshxshcjsdhacicjlkadsjchdsjkhcjdsgchjdsgc</td>
+            <td><img src="mouse.jpg" alt="dcg"></td>
+            <td>duiuybewfyxiufynerfyierujowieoziwiedourfiryvgyufgviodciisdoicos</td>
+        </tr>
+        <tr>
+            <td>eubduefbexefbieyfuiry</td>
+            <td>frffyvtufvbjfjgvbdfv</td>
+            <td>yvguyfgvuyfgvfgvfgvjnixfyierferofueroufoufoelioerufiyyuifgrvufgvfhcuiehfieoiwiuoivuifvhui</td>
+        </tr>
+        <tr>
+            <td><img src="rain.jpg" alt="dch"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+    </table>
+</body>
+</html>
